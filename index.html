@@ -5,28 +5,22 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
-  <meta property="og:url" content="URL OF THE WEBSITE" />
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta name="description" content="">
+  <meta property="og:title" content="LangPref" />
+  <meta property="og:description" content="Learning from Comparative Human Language Feedback" />
+  <!-- <meta property="og:url" content="URL OF THE WEBSITE" /> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image:height" content="630" /> -->
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Reward Learning, Human-Robot Interaction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <title>Trajectory Improvement and Reward Learning from Comparative Language Feedback</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/png" href="./static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
@@ -49,33 +43,39 @@
 
   <section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
+      <div class="container">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Trajectory Improvement and Reward Learning from Comparative
-              Language Feedback</h1>
+            <img src="static/images/banner_image.png" alt="Banner" style="margin-right: 10px; height: 150px;">
+              <h1 class="title is-1 publication-title" style="width: 100%;">
+                Trajectory Improvement and Reward Learning <br>from ComparativeLanguage Feedback
+              </h1>
+            
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhaojing Yang</a><sup>1</sup>,</span>
+                <a href="https://yang-zj1026.github.io" target="_blank">Zhaojing Yang</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Miru Jun</a><sup>1</sup>,</span>
+                <a href="https://github.com/lemonlemonde" target="_blank">Miru Jun</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jeremy Tien</a><sup>2</sup>,
+                <a href="https://www.linkedin.com/in/jeremy-tien/" target="_blank">Jeremy Tien</a><sup>2</sup>,
               </span>
               <span class="author-block"></span>
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Stuart J. Russell</a><sup>2</sup>,
+                <a href="https://people.eecs.berkeley.edu/~russell/" target="_blank">Stuart J. Russell</a><sup>2</sup>,
               </span>
               <span class="author-block"></span>
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Anca Dragan</a><sup>2</sup>,
+                <a href="https://people.eecs.berkeley.edu/~anca/" target="_blank">Anca Dragan</a><sup>2</sup>,
               </span>
               <span class="author-block"></span>
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Erdem B&#305;y&#305;k</a><sup>1</sup>,
+                <a href="https://ebiyik.github.io" target="_blank">Erdem B&#305;y&#305;k</a><sup>1</sup>,
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>University of Southern California<br><sup>2</sup>University of California, Berkeley<br>CoRL 2024</span>
+              <span class="author-block" style="margin-bottom: 10px;"><sup>1</sup><span style="font-size: 18px;"> University of Southern California</span> 
+              <span style="margin-left: 12px;"></span> <sup>2</sup><span style="font-size: 18px;"> University of California, Berkeley</span>
+              </span>
+              <div class="conference-name">CoRL 2024</div> <!-- Moved conference name to a separate div -->
               <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
 
@@ -83,7 +83,7 @@
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                  <a href="static/pdfs/lang_pref_corl.pdf" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -93,7 +93,7 @@
                 </span>
 
                 <!-- Supplementary PDF link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -101,7 +101,7 @@
                     </span>
                     <span>Supplementary</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- Github link -->
                 <span class="link-block">
@@ -134,16 +134,13 @@
 
 
   <!-- Teaser video-->
-  <section class="hero teaser">
+  <section class="hero teaser" style="margin-top: -20px;">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <video poster="" id="supp_video" autoplay controls muted loop height="100%" class="rounded-video">
           <!-- Your video here -->
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
+          <source src="static/videos/teaser_video.mp4" type="video/mp4">
         </video>
-        <h2 class="subtitle has-text-centered">
-          A short teaser video of the paper.
-        </h2>
       </div>
     </div>
   </section>
@@ -168,98 +165,189 @@
 
 
   <!-- Image carousel -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
+  <!-- <section class="hero is-small"> -->
+    <!-- <div class="hero-body"> -->
+      <!-- <div class="container"> -->
+        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+          <!-- <div class="item"> -->
             <!-- Your image here -->
-            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              First image description.
-            </h2>
-          </div>
-          <div class="item">
+            <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" /> -->
+            <!-- <h2 class="subtitle has-text-centered"> -->
+              <!-- First image description. -->
+            <!-- </h2> -->
+          <!-- </div> -->
+          <!-- <div class="item"> -->
             <!-- Your image here -->
-            <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Second image description.
-            </h2>
-          </div>
-          <div class="item">
+            <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" /> -->
+            <!-- <h2 class="subtitle has-text-centered"> -->
+              <!-- Second image description. -->
+            <!-- </h2> -->
+          <!-- </div> -->
+          <!-- <div class="item"> -->
             <!-- Your image here -->
-            <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Third image description.
-            </h2>
-          </div>
-          <div class="item">
+            <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" /> -->
+            <!-- <h2 class="subtitle has-text-centered"> -->
+              <!-- Third image description. -->
+            <!-- </h2> -->
+          <!-- </div> -->
+          <!-- <div class="item"> -->
             <!-- Your image here -->
-            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
-            <h2 class="subtitle has-text-centered">
-              Fourth image description.
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" /> -->
+            <!-- <h2 class="subtitle has-text-centered"> -->
+              <!-- Fourth image description. -->
+            <!-- </h2> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </section> -->
   <!-- End image carousel -->
 
 
+<!-- Approach -->
+<section class="section">
+  <div class="container is-max-desktop">
+      <h2 class="title is-3" style="margin-bottom: 20px;">Approach</h2>
+        <!-- <div class="column is-four-fifths"> -->
+          <div class="content level-set has-text-justified">
+            <!-- Your image here -->
+            <img src="static/images/approach.png" alt="Approach" style="width: 100%; margin-bottom: 10px;"/>
+            <!-- <p class="subtitle" style="font-size: 14px;">
+              Oveview of our approach. (a) Architecture of the model that learns a shared latent space between
+trajectories and comparative language feedback. (b) Comparative language-based reward learning.
+            </p> -->
+              <p>Our approach is composed of two stages: First, we learn a shared latent space
+                where robot trajectories and human language feedback are aligned. To align embeddings
+                of trajectories with those of language feedback, we first freeze T5 model and train the trajectory
+                encoder. Subsequently, we perform co-finetuning of both components. Second, we leverage this learned
+                latent space to improve robot trajectory or learn human preferences.
+              </p>
 
+          </div>
+        <!-- </div> -->
+  </div>
+</section>
+
+<!-- Simulation Results -->
+<section class="section" style="margin-top: -30px;">
+  <div class="container is-max-desktop content">
+      <h2 class="title">Simulation Results</h2>
+      <div class="content level-set has-text-justified">
+      <p> We explored two primary ways to
+        leverage the learned latent space: first, to iteratively improve the robot's trajectory, and second, to
+        accurately learn user preferences. The experiments are conducted in Robosuite and Metaworld environment.</p>
+      </div>
+      <h3 class="title is-4" style="margin-bottom: 25px;">
+        Improve Trajectories
+      </h3>
+      <div style="text-align: center;"> <!-- Centering div added -->
+        <img src="static/images/improve_traj.png" alt="Improve Trajectory" style="width:60%; margin-bottom: 10px;"/>
+      </div> <!-- End of centering div -->
+      <div class="content level-set has-text-justified">
+        <p>
+          We leveraged the latent space to iteratively improve an initial suboptimal robot trajectory using simulated human language feedback. 
+          In both environments, we consistently improve the trajectories, which showcases the effectiveness of the learned latent space and the improvement algorithm. However,
+          it can be noted that our algorithm cannot reach the performance of the optimal trajectory. This is
+          because every improvement iteration is completely independent from the previous iterations and the
+          robot may get stuck in a loop between good but non-optimal trajectories.
+        </p>
+      </div>
+
+      <h3 class="title is-4" style="margin-bottom: 25px; margin-top: 40px;">
+        Preference-based Learning
+      </h3>
+      <img src="static/images/pref_learning.png" alt="Improve Trajectory" style="width:100%; margin-bottom: 10px;"/>
+      <div class="content level-set has-text-justified">
+        <p>
+          We also utilized the learned latent space to learn the user's preference, i.e., their reward function. 
+          The reward weights were randomly initialized to simulate human feedback. We adopt cross-entropy between learned rewards and true rewards, and he true reward value of the optimal trajectory based on
+          the learned reward as the evaluation metric. Results demonstrates that our approach converges more quickly than the baseline.
+        </p>
+      </div>
+  </div>
+</section>
+
+
+<!-- User Studies -->
+<section class="section" style="margin-top: -30px;">
+  <div class="container is-max-desktop content">
+      <h2 class="title">User Studies</h2>
+      <div class="content level-set has-text-justified">
+        <p> To further verify the effectiveness of our approach, we conducted human subject studies by recruiting 10
+          subjects (4 female, 6 male) from varying backgrounds and observing them to interact with our real
+          robot. The subjects participated in the trajectory improvement and preference learning studies, similar to that in the simulation experiments. 
+        </p>
+      </div>
+      <h3 class="title is-4" style="margin-bottom: 20px;">
+        Improve Trajectories
+      </h3>
+      <div style="text-align: center;"> <!-- Centering div added -->
+        <img src="static/images/user_study_improve_traj.png" alt="Improve Trajectory" style="width:60%; margin-bottom: 10px;"/>
+      </div> <!-- End of centering div -->
+      <div class="content level-set has-text-justified">
+        <p>
+          The subjects has been consistently giving positive responses for user experience and speed of adaptation,  but has two peaks in iterations to satisfaction.
+          We conjecture that the dataset of 32 trajectories may not have contained trajectories that the users desired.
+        </p>
+      </div>
+      <h3 class="title is-4" style="margin-bottom: 25px; margin-top: 40px;">
+        Preference Learning
+      </h3>
+      <div style="text-align: center;"> <!-- Centering div added -->
+        <img src="static/images/user_study_pref.png" alt="Preference Learning" style="width:100%; margin-bottom: 10px;"/>
+      </div> <!-- End of centering div -->
+      <div class="content level-set has-text-justified">
+        <p>
+          Our language-based method scored better than the comparison-based method for all attributes. The average score of the language-based method over all attributes is
+          23.9% higher than the comparison-based method.
+        </p>
+        <p>
+          In terms of the user rating of optimal trajectories (right most figure), To quantitatively assess the learning efficiency, we checked the area under curve (AUC) for both lines. We
+          found that the AUC for the comparative language line is statistically significantly higher than that
+          of preference comparison line (p < 0.05). This indicates that our language-based approach more
+          efficiently captures human preferences compared to the comparison-based method.
+        </p>
+      </div>
+      <h3 class="title is-4" style="margin-bottom: 25px; margin-top: 40px;">
+        Videos
+      </h3>
+      <div class="columns is-centered">
+        <div class="column" style="width: 45%;">
+          <video poster="" id="user_study_1" autoplay controls muted loop height="100%">
+            <!-- Your video here -->
+            <source src="static/videos/blurred_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column" style="width: 45%;">
+          <video poster="" id="user_study_2" autoplay controls muted loop height="100%">
+            <!-- Your second video here -->
+            <source src="static/videos/blurred_2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+  </div>
+</section>
 
   <!-- Youtube video -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
+  <!-- <section class="section is-small is-light"> -->
+    <!-- <div class="container is-max-desktop content"> -->
+      <!-- <div class="container"> -->
         <!-- Paper video. -->
-        <h2 class="title is-3">Video Presentation</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
+        <!-- <h2 class="title">Video Presentation</h2> -->
+        <!-- <div class="columns is-centered has-text-centered"> -->
+          <!-- <div class="column is-four-fifths"> -->
 
-            <div class="publication-video">
+            <!-- <div class="publication-video"> -->
               <!-- Youtube embed code here -->
-              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+              <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </section> -->
   <!-- End youtube video -->
-
-
-  <!-- Video carousel -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Another Carousel</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" id="video1" autoplay controls muted loop height="100%">
-              <!-- Your video file here -->
-              <source src="static/videos/carousel1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" autoplay controls muted loop height="100%">
-              <!-- Your video file here -->
-              <source src="static/videos/carousel2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" autoplay controls muted loop height="100%">\
-              <!-- Your video file here -->
-              <source src="static/videos/carousel3.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End video carousel -->
 
 
 
@@ -267,7 +355,7 @@
 
 
   <!-- Paper poster -->
-  <section class="hero is-small is-light">
+  <!-- <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container">
         <h2 class="title">Poster</h2>
@@ -277,7 +365,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
   <!--End paper poster -->
 
 
@@ -287,9 +375,11 @@
       <h2 class="title">BibTeX</h2>
       <pre><code>
         @inproceedings{yangtrajectory,
-        title={Trajectory Improvement and Reward Learning from Comparative Language Feedback},
-        author={Yang, Zhaojing and Jun, Miru and Tien, Jeremy and Russell, Stuart and Dragan, Anca and Biyik, Erdem},
-        booktitle={8th Annual Conference on Robot Learning}}
+          title={Trajectory Improvement and Reward Learning from Comparative Language Feedback},
+          author={Yang, Zhaojing and Jun, Miru and Tien, Jeremy and Russell, Stuart and Dragan, Anca and Biyik, Erdem},
+          booktitle={8th Annual Conference on Robot Learning},
+          year={2024}
+        }
       </code></pre>
     </div>
   </section>
@@ -303,8 +393,8 @@
           <div class="content">
 
             <p>
-              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                target="_blank">Academic Project Page Template</a>.
+              This page was adapted from the following <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">source code</a>.
             </p>
 
           </div>

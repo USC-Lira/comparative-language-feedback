@@ -17,6 +17,16 @@ body {
   font-variant: small-caps;
 }
 
+.rounded-video {
+  border-radius: 10px; /* Adjust the value for more or less rounding */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Adjust shadow properties as needed */
+  overflow: hidden; /* Ensures the video fits within the rounded corners */
+}
+
+/* .section {
+  margin-top: -10px;
+  margin-bottom: -10px;
+} */
 
 .teaser .hero-body {
   padding-top: 0;
