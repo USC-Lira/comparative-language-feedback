@@ -46,7 +46,7 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <img src="static/images/banner_image.png" alt="Banner" style="margin-right: 10px; height: 160px;">
+            <img src="static/images/banner_image.png" alt="Banner" style="margin-right: 10px; height: 150px;">
               <h1 class="title is-1 publication-title" style="width: 100%;">
                 Trajectory Improvement and Reward Learning <br>from ComparativeLanguage Feedback
               </h1>
@@ -134,13 +134,36 @@
 
 
   <!-- Teaser video-->
-  <section class="hero teaser" style="margin-top: -20px;">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video poster="" id="supp_video" autoplay controls muted loop height="100%" class="rounded-video">
+  <!-- <section class="hero teaser" style="margin-top: -20px;"> -->
+    <!-- <div class="container is-max-desktop"> -->
+      <!-- <div class="hero-body"> -->
+        <!-- <video poster="" id="supp_video" autoplay controls muted loop height="100%" class="rounded-video"> -->
           <!-- Your video here -->
-          <source src="static/videos/teaser_video.mp4" type="video/mp4">
-        </video>
+          <!-- <source src="static/videos/teaser_video.mp4" type="video/mp4"> -->
+        <!-- </video> -->
+        <!-- <div class="publication-video"> -->
+          <!-- Youtube embed code here -->
+          <!-- <iframe src="https://youtu.be/uxQOdKU-k0s" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen> -->
+          <!-- </iframe> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </section> -->
+
+  <section class="hero teaser" style="margin-top: -20px;">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            
+            <div class="publication-video">
+              <!-- Youtube embed code here -->
+              <iframe src="https://www.youtube.com/embed/0649vsxY_eg?si=U5n06ierbm041asF" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -154,7 +177,16 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Learning from human feedback has gained traction in fields like robotics and natural language processing in recent years. While prior works mostly rely on human feedback in the form of comparisons, language is a preferable modality that provides more informative insights into user preferences. In this work, we aim to incorporate comparative language feedback to iteratively improve robot trajectories and to learn reward functions that encode human preferences. To achieve this goal, we learn a shared latent space that integrates trajectory data and language feedback, and subsequently leverage the learned latent space to improve trajectories and learn human preferences. To the best of our knowledge, we are the first to incorporate comparative language feedback into reward learning. Our simulation experiments demonstrate the effectiveness of the learned latent space and the success of our learning algorithms. We also conduct human subject stud- ies that show our reward learning algorithm achieves a 23.94% higher subjective score on average and is 11.34% more time-efficient compared to preference-based reward learning, underscoring the superior performance of our method.
+              Learning from human feedback has gained traction in fields like robotics and natural language processing in recent years. 
+              While prior works mostly rely on human feedback in the form of comparisons, language is a preferable modality that provides more informative insights into user preferences. 
+              In this work, we aim to incorporate comparative language feedback to iteratively improve robot trajectories and to learn reward functions that encode human preferences. 
+              To achieve this goal, we learn a shared latent space that integrates trajectory data and language feedback, and subsequently leverage the learned latent space to improve
+              trajectories and learn human preferences. To the best of our knowledge, we are the
+              first to incorporate comparative language feedback into reward learning. Our simulation experiments demonstrate the effectiveness of the learned latent space and
+              the success of our learning algorithms. We also conduct human subject studies
+              that show our reward learning algorithm achieves a 23.9% higher subjective score
+              on average and is 11.3% more time-efficient compared to preference-based reward
+              learning, underscoring the superior performance of our method.
             </p>
           </div>
         </div>
@@ -374,7 +406,7 @@ trajectories and comparative language feedback. (b) Comparative language-based r
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-        @inproceedings{yangtrajectory,
+        @inproceedings{yang2024trajectory,
           title={Trajectory Improvement and Reward Learning from Comparative Language Feedback},
           author={Yang, Zhaojing and Jun, Miru and Tien, Jeremy and Russell, Stuart and Dragan, Anca and Biyik, Erdem},
           booktitle={8th Annual Conference on Robot Learning},
