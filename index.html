@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Trajectory Improvement and Reward Learning from Comparative Language Feedback</title>
+  <title>Learning from Comparative Language Feedback</title>
   <link rel="icon" type="image/png" href="./static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -48,11 +48,12 @@
           <div class="column has-text-centered">
             <img src="static/images/banner_image.png" alt="Banner" style="margin-right: 10px; height: 150px;">
               <h1 class="title is-1 publication-title" style="width: 100%;">
-                Trajectory Improvement and Reward Learning <br>from Comparative Language Feedback
+                Learning from Comparative Language Feedback
               </h1>
-            
+              <h1 class="title is-3" style="width: 100%;">
+                Trajectory Improvement and Reward Learning <br>from Comparative Language Feedback<sup>&dagger;</sup>
+              </h1>
             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
               <span class="author-block">
                 <a href="https://yang-zj1026.github.io" target="_blank">Zhaojing Yang</a><sup>1</sup>,</span>
               <span class="author-block">
@@ -70,12 +71,48 @@
                 <a href="https://ebiyik.github.io" target="_blank">Erdem B&#305;y&#305;k</a><sup>1</sup>,
               </span>
             </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block" style="margin-bottom: 10px;"><sup>1</sup><span style="font-size: 18px;"> University of Southern California</span> 
-              <span style="margin-left: 12px;"></span> <sup>2</sup><span style="font-size: 18px;"> University of California, Berkeley</span>
+              <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup><span style="font-size: 18px;"> USC</span> 
+              <span style="margin-left: 12px;"></span> <sup>2</sup><span style="font-size: 18px;"> UC Berkeley</span>
               </span>
               <div class="conference-name">CoRL 2024</div> <!-- Moved conference name to a separate div -->
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+
+            <h1 class="title is-3" style="width: 100%;"></h1>
+              <h1 class="title is-3" style="width: 75%; margin: 0 auto;">
+                Active Reward Learning and Iterative Trajectory Improvement from Comparative Language Feedback<sup>&Dagger;</sup>
+              </h1>
+              </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://ei5uke.github.io" target="_blank">Eisuke Hirota</a><sup>1, 2*</sup>,</span>
+              <span class="author-block">
+                <a href="https://yang-zj1026.github.io" target="_blank">Zhaojing Yang</a><sup>1*</sup>,</span>
+              <span class="author-block">
+                <a href="https://misoshiruseijin.github.io" target="_blank">Ayano Hiranaka</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/lemonlemonde" target="_blank">Miru Jun</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/jeremy-tien/" target="_blank">Jeremy Tien</a><sup>3</sup>,
+              </span>
+              <span class="author-block"></span>
+                <a href="https://people.eecs.berkeley.edu/~russell/" target="_blank">Stuart J. Russell</a><sup>3</sup>,
+              </span>
+              <span class="author-block"></span>
+                <a href="https://people.eecs.berkeley.edu/~anca/" target="_blank">Anca Dragan</a><sup>3</sup>,
+              </span>
+              <span class="author-block"></span>
+                <a href="https://ebiyik.github.io" target="_blank">Erdem B&#305;y&#305;k</a><sup>1</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup><span style="font-size: 18px;"> USC </span> 
+              <span style="margin-left: 12px;"><sup>2</sup><span style="font-size: 18px;"> SUNY Binghamton</span> 
+              <span style="margin-left: 12px;"><sup>3</sup><span style="font-size: 18px;"> UC Berkeley</span>
+              </span>
+              <div class="conference-name">Journal Paper Under Review</div> <!-- Moved conference name to a separate div -->
               <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
 
@@ -88,7 +125,7 @@
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
-                    <span>Paper</span>
+                    <span>Paper<sup>&dagger;</sup></span>
                   </a>
                 </span>
 
@@ -103,14 +140,25 @@
                   </a>
                 </span> -->
 
-                <!-- Github link -->
+                <!-- Github link for Corl paper -->
                 <span class="link-block">
                   <a href="https://github.com/USC-Lira/language-preference-learning" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code<sup>&dagger;</sup></span>
+                  </a>
+                </span>
+
+                <!-- Github link for IJRR paper -->
+                <span class="link-block">
+                  <a href="https://github.com/USC-Lira/language_active_learning" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code<sup>&Dagger;</sup></span>
                   </a>
                 </span>
 
@@ -177,16 +225,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Learning from human feedback has gained traction in fields like robotics and natural language processing in recent years. 
-              While prior works mostly rely on human feedback in the form of comparisons, language is a preferable modality that provides more informative insights into user preferences. 
-              In this work, we aim to incorporate comparative language feedback to iteratively improve robot trajectories and to learn reward functions that encode human preferences. 
-              To achieve this goal, we learn a shared latent space that integrates trajectory data and language feedback, and subsequently leverage the learned latent space to improve
-              trajectories and learn human preferences. To the best of our knowledge, we are the
-              first to incorporate comparative language feedback into reward learning. Our simulation experiments demonstrate the effectiveness of the learned latent space and
-              the success of our learning algorithms. We also conduct human subject studies
-              that show our reward learning algorithm achieves a 23.9% higher subjective score
-              on average and is 11.3% more time-efficient compared to preference-based reward
-              learning, underscoring the superior performance of our method.
+              Human-in-the-loop learning has gained traction in fields like robotics and natural language processing in recent years. While prior work mostly relies on human feedback in the form of preference comparisons due to its ease-of-use, this feedback type has multiple limitations. Namely, it does not let users explain the reasons for their preferences and provides only a binary signal for learning, resulting in huge data inefficiency. Consequently, training robots require a substantial amount of human feedback, occupying significant time and burdening the user. To overcome these challenges, we take the insight that language is a preferable medium compared to comparisons, providing more information regarding user preferences. Thus, in this work, we aim to incorporate comparative language feedback to iteratively improve robot trajectories and learn reward functions that encode human preferences. We learn a shared latent space that integrates trajectory data and language feedback, and subsequently leverage the learned latent space to improve trajectories and learn human preferences. Ergo, our method extrapolates deeper insights regarding user preferences while preserving intuitiveness and ease-of-use. We finally introduce an active learning method that integrates comparative language feedback to further boost data-efficiency. Our results in simulation experiments and user studies demonstrate the effectiveness of the learned latent space and the success of our learning algorithms. Our reward learning algorithm exhibits a 23.9% improvement in subjective score on average and 11.3% higher time-efficiency compared to the preference comparison method in the user studies, underscoring the better performance of our method. Lastly, our active querying method further improves user experience featuring an 8.31% average improvement in subjective scores compared to random querying.
             </p>
           </div>
         </div>
@@ -243,16 +282,13 @@
         <!-- <div class="column is-four-fifths"> -->
           <div class="content level-set has-text-justified">
             <!-- Your image here -->
-            <img src="static/images/approach.png" alt="Approach" style="width: 100%; margin-bottom: 10px;"/>
+            <!-- <img src="static/images/approach.png" alt="Approach" style="width: 100%; margin-bottom: 10px;"/> -->
+            <img src="static/images/ijrr_approach.png" alt="Approach" style="width: 100%; margin-bottom: 10px;"/>
             <!-- <p class="subtitle" style="font-size: 14px;">
               Oveview of our approach. (a) Architecture of the model that learns a shared latent space between
 trajectories and comparative language feedback. (b) Comparative language-based reward learning.
             </p> -->
-              <p>Our approach is composed of two stages: First, we learn a shared latent space
-                where robot trajectories and human language feedback are aligned. To align embeddings
-                of trajectories with those of language feedback, we first freeze T5 model and train the trajectory
-                encoder. Subsequently, we perform co-finetuning of both components. Second, we leverage this learned
-                latent space to improve robot trajectory or learn human preferences.
+              <p>Our approach is composed of three stages: (i) we learn a shared latent space where robot trajectories and comparative language feedback are aligned, (ii) we leverage this learned latent space for trajectory improvement and reward learning, and finally (iii) we further enhance preference learning through active query selection to achieve higher data efficiency.
               </p>
 
           </div>
